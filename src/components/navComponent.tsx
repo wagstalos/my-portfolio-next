@@ -11,26 +11,26 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" text-white p-4">
+    <nav className=" text-white p-4 border-b border-slate-500/30">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
           <Image
             src={logo}
             alt="Wagner Silva"
             title="WAgner Silva"
-            width={150}
+            width={200}
           />
         </Link>
 
         {/* Links Centralizados */}
         <ul className="hidden md:flex gap-6 text-lg mx-auto">
-          <li>
+          <li className="hover:text-amber-300">
             <Link href="#quem-sou">Quem Sou</Link>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <Link href="#meus-trabalhos">Meus Trabalhos</Link>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <Link href="#experiencia">Experiência</Link>
           </li>
         </ul>
@@ -39,7 +39,7 @@ export default function Nav() {
         <a
           href="/cv.pdf"
           download
-          className="hidden md:flex items-center border border-amber-400 text-white px-4 py-2 rounded-full font-semibold hover:bg-amber-400 hover:text-black"
+          className="hidden md:flex items-center border border-blue-100/20 bg-blue-200/10 text-white px-4 py-2 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400"
         >
           <svg
             className="fill-current w-4 h-4 mr-2"
@@ -64,22 +64,22 @@ export default function Nav() {
       {/* Menu Mobile */}
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-4 p-4 bg-gray-800">
-          <li>
+          <li className="hover:text-amber-300">
             <Link href="#quem-sou" onClick={() => setIsOpen(false)}>
               Quem Sou
             </Link>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <Link href="#meus-trabalhos" onClick={() => setIsOpen(false)}>
               Meus Trabalhos
             </Link>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <Link href="#experiencia" onClick={() => setIsOpen(false)}>
               Experiência
             </Link>
           </li>
-          <li>
+          <li className="hover:text-amber-300">
             <a
               href="/cv.pdf"
               download
