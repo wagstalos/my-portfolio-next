@@ -1,7 +1,12 @@
+import { ContainerGrid } from "../components/container";
+import Nav from "../components/navComponent";
+
 export default function Home() {
   return (
     <div className="">
-      <h1 className="font-poppins bg-sky-400 text-4xl">wagner</h1>
+      <ContainerGrid>
+        <Nav></Nav>
+      </ContainerGrid>
     </div>
   );
 }
