@@ -14,7 +14,6 @@ const poppins = Poppins({
   weight: "600",
   subsets: ["latin"],
   display: "swap",
-  
 });
 
 const geistMono = Geist_Mono({

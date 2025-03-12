@@ -1,14 +1,10 @@
-import Image from "next/image";
-import { ContainerGrid } from "./container";
-
-import avatar from "@/assets/avatar-wps.png";
+import Carousel from "./carouselFormacao";
 
 export function SectionFormacao() {
   return (
-    <ContainerGrid>
-      <div>
-        <h2>Formação</h2>
-      </div>
-    </ContainerGrid>
+    <section className="mt-32">
+      <h2 className="text-4xl font-bold">Formação</h2>
+      <Carousel></Carousel>
+    </section>
   );
 }

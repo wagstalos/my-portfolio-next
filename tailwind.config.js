@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         "wps-yellow": "#FFC542",
       },
+      maxWidth:{
+        grid: '76rem'
+      }
     },
   },
   plugins: [],

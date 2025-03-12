@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { HiMenu, HiX } from "react-icons/hi"; // Substituindo Menu e X
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ export default function Nav() {
           <Image
             src={logo}
             alt="Wagner Silva"
-            title="WAgner Silva"
+            title="Wagner Silva"
             width={200}
           />
         </Link>
@@ -57,7 +57,7 @@ export default function Nav() {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <HiX size={28} /> : <HiMenu size={28} />}
         </button>
       </div>
 
