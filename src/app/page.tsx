@@ -4,6 +4,7 @@ import { ContainerGrid } from "../components/container";
 import Nav from "../components/navComponent";
 import { SectionAboutMe } from "@/components/sectionAboutMe";
 import { SectionNumbers } from "@/components/sectionNumbers";
+import Timeline from "@/components/sectionExperience";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <SectionFormacao></SectionFormacao>
         <SectionAboutMe></SectionAboutMe>
         <SectionNumbers></SectionNumbers>
+        <Timeline></Timeline>
       </ContainerGrid>
     </div>
   );

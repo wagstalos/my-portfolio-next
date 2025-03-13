@@ -1,3 +1,4 @@
+
 export function SectionNumbers() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-32 mb-32 ">
@@ -19,6 +20,7 @@ export function SectionNumbers() {
         </p>
         <p className="text-lg text-gray-400">Projetos entregues</p>
       </div>
+   
     </section>
   );
 }
