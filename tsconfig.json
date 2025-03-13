@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/sectionExperience.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/sectionExperience.tsx", "src/components/sectionProjects.tsx", "src/components/carouselFormacao.tsx", "src/components/sectionFormacao.tsx", "src/components/sectionFooter.tsx", "src/components/sectionNumbers.tsx", "src/components/sectionBanner.tsx", "src/components/sectionAboutMe.tsx", "src/components/navComponent.tsx"],
   "exclude": ["node_modules"]
 }

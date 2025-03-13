@@ -4,8 +4,16 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { RiCodeAiFill } from "react-icons/ri";
 
+// Definição da interface para o tipo do item
+interface TimelineItemProps {
+  year: string;
+  title: string;
+  description: string;
+}
+
 const Timeline = () => {
-  const items = [
+  // Definindo o tipo de items como um array de objetos do tipo TimelineItemProps
+  const items: TimelineItemProps[] = [
     {
       year: "2024",
       title: "Backlgrs - Frontend Sr",
@@ -52,7 +60,13 @@ const Timeline = () => {
 };
 
 // Componente de cada item da Timeline
-const TimelineItem = ({ item, index }) => {
+const TimelineItem = ({
+  item,
+  index,
+}: {
+  item: TimelineItemProps;
+  index: number;
+}) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
