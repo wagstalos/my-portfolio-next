@@ -2,6 +2,7 @@ import Image from "next/image";
 import imageAbout from "@/assets/Image.png";
 import imageAvatar from "@/assets/avatar-mini.jpg";
 import { RiInstagramLine } from "react-icons/ri";
+import { FaSalesforce } from "react-icons/fa";
 
 export function SectionAboutMe() {
   return (
@@ -59,17 +60,35 @@ export function SectionAboutMe() {
             </div>
           </a>
 
-          <div className="mt-28 ">
-            <Image
-              className="w-12 h-12 rounded-full border border-amber-50/10 p-1"
-              src={imageAvatar}
-              alt="Rounded avatar"
-            />
+          <div className="mt-24 ">
+            <div className="flex">
+              <Image
+                className="w-12 h-12 rounded-full border border-amber-50/10 p-1"
+                src={imageAvatar}
+                alt="Rounded avatar"
+              />
+              <span className="ml-4">
+                <p className="font-bold">Wagner Silva</p>
+                <p className="text-gray-400">Software Engineer</p>
+              </span>
+            </div>
 
-            <a href="" className="flex mt-4">
-              <RiInstagramLine className="w-6 h-6 mr-2 text-gray-300" />
-              <p className="text-gray-300">wagner.paulo89</p>
-            </a>
+            <div className="flex">
+              <a
+                href=""
+                className="flex mt-4 mr-4 text-gray-300 hover:text-amber-200"
+              >
+                <RiInstagramLine className="w-6 h-6 mr-2" />
+                <p>wagner.paulo89</p>
+              </a>
+              <a
+                href="https://www.salesforce.com/trailblazer/wdasilva13"
+                className="flex mt-4 text-gray-300 hover:text-amber-200"
+              >
+                <FaSalesforce className="w-6 h-6 mr-2 " />
+                <p>wdasilva13</p>
+              </a>
+            </div>
           </div>
 
           <p className="font-bold mt-4">Especialidades:</p>

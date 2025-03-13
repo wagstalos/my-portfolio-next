@@ -77,6 +77,34 @@ body {
 }
 
 /* Marquee animation */
+/* .container-marquee::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: red;
+} */
+.container-marquee::before,
+.container-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 10;
+}
+
+.container-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(12, 13, 21, 1), rgba(12, 13, 21, 0));
+}
+
+.container-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(12, 13, 21, 1), rgba(12, 13, 21, 0));
+}
+
 .marquee {
   animation: marquee 25s linear infinite;
 }
@@ -89,4 +117,17 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.avatar-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 100px;
+  /* Altura do degradê */
+
+  z-index: 1;
+  background: linear-gradient(to top, rgba(12, 12, 20, 1) 40%, rgba(12, 12, 20, 0) 100%);
 }

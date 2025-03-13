@@ -65,7 +65,7 @@ export function SectionBanner() {
           </li>
         </ul>
 
-        <div className="relative p-4">
+        <div className="relative p-4 avatar-container">
           <RiHtml5Fill className="w-10 h-10 text-orange-500 absolute top-[18%] left-[8%] animate-pulse  " />
           <IoLogoCss3 className="w-10 h-10 text-blue-500 absolute top-[37%] left-[87%] animate-pulse" />
           <RiJavascriptFill className="w-10 h-10 text-yellow-500 absolute top-[85%] left-[0%] animate-pulse" />
@@ -78,15 +78,16 @@ export function SectionBanner() {
             height={500}
           />
         </div>
-
-        <div className="w-full overflow-hidden whitespace-nowrap">
+        <small className="font-bold text-neutral-500 text-base">Skills:</small>
+        <div className="relative w-full overflow-hidden whitespace-nowrap container-marquee">
           <div className="marquee flex space-x-8 animate-marquee">
-            <p className="font-bold text-4xl">Skills:</p>
-            <p className="font-bold text-4xl">ReactJS</p>
-            <p className="font-bold text-4xl">Vue</p>
-            <p className="font-bold text-4xl">SASS</p>
-            <p className="font-bold text-4xl">CSS</p>
-            <p className="font-bold text-4xl">HTML</p>
+            <p className="font-bold text-4xl text-gray-400">ReactJS</p>
+            <p className="font-bold text-4xl text-gray-400">Vue</p>
+            <p className="font-bold text-4xl text-gray-400">SASS</p>
+            <p className="font-bold text-4xl text-gray-400">CSS</p>
+            <p className="font-bold text-4xl text-gray-400">HTML</p>
+            <p className="font-bold text-4xl text-gray-400">SFCC</p>
+            <p className="font-bold text-4xl text-gray-400">Gulp</p>
           </div>
         </div>
       </div>
