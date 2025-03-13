@@ -17,7 +17,7 @@ export function SectionBanner() {
       <div className="container flex flex-col items-center justify-center h-screen mt-32">
         <p className="text-amber-400">🚀 SOFTWARE ENGINEER</p>
         <h1 className="text-5xl md:text-7xl font-bold text-white text-center">
-          Wagner Silva - Frontend
+          Wagner Silva 🗲 Frontend
         </h1>
         <p className="text-slate-400 mt-2 md:mt-4 text-center md:text-[20px] leading-[140%] max-w-[800px]">
           Olá, sou Wagner Paulo, Desenvolvedor Fullstack. Sou formado em Design
