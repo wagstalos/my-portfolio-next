@@ -1,11 +1,8 @@
 "use client";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { IconSchool } from "@tabler/icons-react";
 import "swiper/css";
-
-import blurBox from "@/assets/blur-box-one-hero.png";
 
 const Carousel = () => {
   return (
