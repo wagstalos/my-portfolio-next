@@ -33,7 +33,10 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="relative max-w-6xl mx-auto p-8 mt-32 mb-32">
+    <section
+      id="experiencia"
+      className="relative max-w-6xl mx-auto p-8 mt-32 mb-32"
+    >
       <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2">
         <RiCodeAiFill className="text-neutral-400" />
         Experiência
@@ -44,7 +47,7 @@ const Timeline = () => {
       {items.map((item, index) => (
         <TimelineItem key={index} item={item} index={index} />
       ))}
-    </div>
+    </section>
   );
 };
 

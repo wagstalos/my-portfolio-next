@@ -20,16 +20,13 @@ const Carousel = () => {
       }}
       pagination={{ clickable: true }}
       breakpoints={{
-        0: { slidesPerView: 1 }, // Mobile: 1 slide
+        0: { slidesPerView: 1.2 }, // Mobile: 1 slide
         768: { slidesPerView: 2 }, // Tablets: 2 slides
         1024: { slidesPerView: 3.2 }, // Desktop: 3.2 slides
       }}
     >
       <SwiperSlide>
         <div className="relative max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900/20 dark:border-gray-700">
-          <div>
-            <Image className="absolute" src={blurBox} alt="blur" width={250} />
-          </div>
           <div className="flex items-center justify-between w-full text-white border-b border-slate-500/30 pb-4">
             {/* Ícone */}
             <IconSchool
@@ -41,12 +38,9 @@ const Carousel = () => {
             {/* Texto */}
             <h2 className="text-lg font-semibold">2023</h2>
           </div>
-
-          <a href="#">
-            <h5 className="mb-2 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              Pós-Graduação Unesc
-            </h5>
-          </a>
+          <h5 className="mb-2 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            Pós-Graduação Unesc
+          </h5>
           <p className="mb-9 font-normal text-gray-500 dark:text-gray-400">
             Des. Fullstack de Sistemas Modernos para Nuvem (Cloud Native)
           </p>

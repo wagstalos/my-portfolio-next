@@ -1,16 +1,11 @@
 import Image from "next/image";
-import {
-  RiBehanceLine,
-  RiGithubLine,
-  RiLinkedinFill,
-  RiDribbbleLine,
-  RiHtml5Fill,
-  RiJavascriptFill,
-} from "react-icons/ri";
+import { RiHtml5Fill, RiJavascriptFill } from "react-icons/ri";
 import { IoLogoCss3 } from "react-icons/io";
 
 import avatar from "@/assets/avatar-wps.png";
 import { IconsFloating } from "./iconsFloating";
+import { IconsSociais } from "./iconsSociais";
+import { MarqueeSkills } from "./marqueeSkills";
 
 export function SectionBanner() {
   return (
@@ -31,39 +26,7 @@ export function SectionBanner() {
           Nuvem pela UNESC.
         </p>
 
-        <ul className="flex mt-4 space-x-4">
-          <li>
-            <a href="#" className="flex items-center justify-center">
-              <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center">
-                <RiGithubLine className="w-6 h-6 text-white" />
-              </span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="flex items-center justify-center">
-              <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center">
-                <RiLinkedinFill className="w-6 h-6 text-white" />
-              </span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="flex items-center justify-center">
-              <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center">
-                <RiBehanceLine className="w-6 h-6 text-white" />
-              </span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="flex items-center justify-center">
-              <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center">
-                <RiDribbbleLine className="w-6 h-6 text-white" />
-              </span>
-            </a>
-          </li>
-        </ul>
+        <IconsSociais></IconsSociais>
 
         <div className="relative p-4 avatar-container">
           <RiHtml5Fill className="w-10 h-10 text-orange-500 absolute top-[18%] left-[8%] animate-pulse  " />
@@ -78,19 +41,8 @@ export function SectionBanner() {
             height={500}
           />
         </div>
-        <small className="font-bold text-white text-base">Skills:</small>
-        <div className="relative  max-w-[500px] overflow-hidden whitespace-nowrap container-marquee">
-          <div className="marquee flex space-x-8 animate-marquee">
-            <p className="font-bold text-4xl text-gray-400">ReactJS</p>
-            <p className="font-bold text-4xl text-gray-400">Vue</p>
-            <p className="font-bold text-4xl text-gray-400">SASS</p>
-            <p className="font-bold text-4xl text-gray-400">CSS</p>
-            <p className="font-bold text-4xl text-gray-400">HTML</p>
-            <p className="font-bold text-4xl text-gray-400">SFCC</p>
-            <p className="font-bold text-4xl text-gray-400">Gulp</p>
-            <p className="font-bold text-4xl text-gray-400">Git</p>
-          </div>
-        </div>
+
+        <MarqueeSkills></MarqueeSkills>
       </div>
     </section>
   );

@@ -6,7 +6,10 @@ import { FaSalesforce } from "react-icons/fa";
 
 export function SectionAboutMe() {
   return (
-    <section className="mt-32 mb-32 rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 ">
+    <section
+      id="quemsou"
+      className="mt-32 mb-32 rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 "
+    >
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full md:w-1/2 h-auto">
           <p className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-amber-100/20 dark:text-amber-400 mb-2">

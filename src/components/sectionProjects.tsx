@@ -26,7 +26,10 @@ export default function SectionProjects() {
   if (loading) return <div className="text-center">Carregando...</div>;
 
   return (
-    <section className="py-8 bg-gradient-to-t from-[#0C0D15] via-slate-800 from-[#0C0D15]">
+    <section
+      id="meusprojetos"
+      className="py-8 bg-gradient-to-t from-[#0C0D15] via-slate-800 from-[#0C0D15]"
+    >
       <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2 mt-32">
         <FaWebAwesome className="text-neutral-400" />
         Projetos
@@ -41,13 +44,27 @@ export default function SectionProjects() {
             key={project.id}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
           >
-            <div className="rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 ">
+            <div className="relative rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 ">
+              <span className="absolute bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">
+                Yellow
+              </span>
+
               <img
                 src={project.img}
                 alt={project.title}
                 title={project.title}
-                className="w-full h-[133px] object-cover rounded-[10px]"
+                className="w-full h-[143px] object-cover rounded-[10px]"
               />
+
+              <div className="flex">
+                <span className="mt-2 bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-indigo-900 dark:text-indigo-300">
+                  {project.tag}
+                </span>
+                <span className="mt-2 bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">
+                  {project.categoria}
+                </span>
+              </div>
+
               <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
               <p className="text-gray-500 mb-8">{project.body}</p>
 
