@@ -5,7 +5,7 @@ import Nav from "../components/navComponent";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Nav></Nav>
       <SectionBanner></SectionBanner>
       <ContainerGrid>

@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -28,15 +31,33 @@ body {
 }
 
 .bg-homepage-hero {
-   background-image: url(https://betterstack.com/assets/v2/homepage-v3/hero-bg-408d1e858d0c9969863b4116bf2ad625e96cb10643f5868768c35b604208b9ad.jpg);
+  background-image: url(https://betterstack.com/assets/v2/homepage-v3/hero-bg-408d1e858d0c9969863b4116bf2ad625e96cb10643f5868768c35b604208b9ad.jpg);
+  background-image: url(../assets/hero-bg-408.jpg);
+  /* background-image: url(../assets/bg-hero.jpg); */
   background-size: auto 100%;
+  /* background-size: 100%; */
   width: 100%;
   height: 90vh;
   background-position: center top -20px;
   background-repeat: no-repeat;
 }
 
-.home-hero_gradient {
+/* .bg-homepage-hero::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 45.3rem;
+  border-radius: 133.8rem;
+  opacity: 0.7;
+  background: #3f51b5;
+  filter: blur(100px);
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -32.3rem;
+  z-index: -1;
+} */
+
+/* .home-hero_gradient {
   z-index: -1;
   opacity: .75;
   filter: blur(200px);
@@ -46,4 +67,12 @@ body {
   height: 24rem;
   position: absolute;
   inset: -15% 0% 0% 35%;
+
+} */
+
+
+.marquee {
+  width: 100%;
+  height: 80px;
+  background-color: #0C0D15;
 }

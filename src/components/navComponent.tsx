@@ -63,7 +63,7 @@ export default function Nav() {
 
       {/* Menu Mobile */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center gap-4 p-4 bg-gray-800">
+        <ul className="md:hidden flex flex-col items-center gap-4 p-4 bg-[#0C0D15]">
           <li className="hover:text-amber-300">
             <Link href="#quem-sou" onClick={() => setIsOpen(false)}>
               Quem Sou
