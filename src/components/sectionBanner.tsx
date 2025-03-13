@@ -79,7 +79,16 @@ export function SectionBanner() {
           />
         </div>
 
-        <div className="marquee">Skills</div>
+        <div className="w-full overflow-hidden whitespace-nowrap">
+          <div className="marquee flex space-x-8 animate-marquee">
+            <p className="font-bold text-4xl">Skills:</p>
+            <p className="font-bold text-4xl">ReactJS</p>
+            <p className="font-bold text-4xl">Vue</p>
+            <p className="font-bold text-4xl">SASS</p>
+            <p className="font-bold text-4xl">CSS</p>
+            <p className="font-bold text-4xl">HTML</p>
+          </div>
+        </div>
       </div>
     </section>
   );

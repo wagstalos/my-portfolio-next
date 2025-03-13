@@ -1,12 +1,11 @@
 "use client";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import {
-  IconChevronRight,
-  IconChevronLeft,
-  IconSchool,
-} from "@tabler/icons-react";
+import { IconSchool } from "@tabler/icons-react";
 import "swiper/css";
+
+import blurBox from "@/assets/blur-box-one-hero.png";
 
 const Carousel = () => {
   return (
@@ -27,7 +26,10 @@ const Carousel = () => {
       }}
     >
       <SwiperSlide>
-        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900/20 dark:border-gray-700">
+        <div className="relative max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900/20 dark:border-gray-700">
+          <div>
+            <Image className="absolute" src={blurBox} alt="blur" width={250} />
+          </div>
           <div className="flex items-center justify-between w-full text-white border-b border-slate-500/30 pb-4">
             {/* Ícone */}
             <IconSchool

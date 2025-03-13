@@ -1,5 +1,8 @@
 import Image from "next/image";
-import imageAbout from "@/assets/image-about.png";
+import imageAbout from "@/assets/Image.png";
+import imageAvatar from "@/assets/avatar-mini.jpg";
+import { RiInstagramLine } from "react-icons/ri";
+
 export function SectionAboutMe() {
   return (
     <section className="mt-32 mb-32 p-4">
@@ -24,9 +27,7 @@ export function SectionAboutMe() {
             Quem Sou
           </p>
 
-          <h2 className="text-4xl font-bold mt-5 gradient_text">
-            Prazer sou Wagner Silva
-          </h2>
+          <h2 className="text-4xl font-bold mt-5 ">Prazer sou Wagner Silva</h2>
 
           <p className="mt-8 text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
             Apaixonado por tecnologia, atuo na produção de sites,{" "}
@@ -38,7 +39,41 @@ export function SectionAboutMe() {
             Lightning Web Components (LWC), desenvolvendo soluções inovadoras na
             plataforma.
           </p>
-          <div className="flex mt-10">
+
+          <a
+            href=""
+            type="button"
+            className="relative inline-flex items-center px-5 py-2.5 text-sm font-medium text-center border border-blue-100/20 bg-blue-200/10 text-white rounded-full focus:ring-4 focus:outline-none focus:ring-blue-300 "
+          >
+            <svg
+              className="fill-current w-4 h-4 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"></path>
+            </svg>
+            <span className="sr-only">Notifications</span>
+            Baixar CV
+            <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+              1
+            </div>
+          </a>
+
+          <div className="mt-28 ">
+            <Image
+              className="w-12 h-12 rounded-full border border-amber-50/10 p-1"
+              src={imageAvatar}
+              alt="Rounded avatar"
+            />
+
+            <a href="" className="flex mt-4">
+              <RiInstagramLine className="w-6 h-6 mr-2 text-gray-300" />
+              <p className="text-gray-300">wagner.paulo89</p>
+            </a>
+          </div>
+
+          <p className="font-bold mt-4">Especialidades:</p>
+          <div className="flex flex-wrap border-t border-gray-500/50 py-4">
             <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
               <span className="flex w-2.5 h-2.5 bg-blue-600 rounded-full me-1.5 shrink-0"></span>
               E-commerce
@@ -55,10 +90,21 @@ export function SectionAboutMe() {
               <span className="flex w-2.5 h-2.5 bg-teal-500 rounded-full me-1.5 shrink-0"></span>
               Jogos digitais
             </span>
+            <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
+              <span className="flex w-2.5 h-2.5 bg-amber-500 rounded-full me-1.5 shrink-0"></span>
+              Salesforce
+            </span>
           </div>
         </div>
         <div className="w-full md:w-1/2 h-auto flex justify-center items-center">
-          <Image src={imageAbout} alt="Wagner Silva" width={500} height={400} />
+          <Image
+            src={imageAbout}
+            alt="Wagner Silva"
+            width={500}
+            height={400}
+            quality={100}
+            className="border border-amber-50/20 rounded-4xl p-1"
+          />
         </div>
       </div>
     </section>
