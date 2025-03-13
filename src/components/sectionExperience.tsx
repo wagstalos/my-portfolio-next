@@ -32,7 +32,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="relative max-w-6xl mx-auto p-8">
+    <div className="relative max-w-6xl mx-auto p-8 mt-32 mb-32">
       <h2 className="text-4xl font-bold mb-12 text-center">Expriência</h2>
       {/* Linha Vertical - Apenas no Desktop */}
       <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-2 h-full bg-gray-700"></div>
