@@ -45,10 +45,6 @@ export default function SectionProjects() {
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
           >
             <div className="relative rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 ">
-              <span className="absolute bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">
-                Yellow
-              </span>
-
               <img
                 src={project.img}
                 alt={project.title}
