@@ -88,6 +88,7 @@ export function SectionBanner() {
             <p className="font-bold text-4xl text-gray-400">HTML</p>
             <p className="font-bold text-4xl text-gray-400">SFCC</p>
             <p className="font-bold text-4xl text-gray-400">Gulp</p>
+            <p className="font-bold text-4xl text-gray-400">Git</p>
           </div>
         </div>
       </div>

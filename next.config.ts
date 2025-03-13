@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    domains: ["wpsgames.com.br"], // Adiciona o domínio da imagem externa
+  },
   async rewrites() {
     return [
       {

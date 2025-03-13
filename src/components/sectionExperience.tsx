@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { RiCodeBoxLine, RiCodeAiFill } from "react-icons/ri";
 
 const Timeline = () => {
   const items = [
@@ -33,7 +34,10 @@ const Timeline = () => {
 
   return (
     <div className="relative max-w-6xl mx-auto p-8 mt-32 mb-32">
-      <h2 className="text-4xl font-bold mb-12 text-center">Expriência</h2>
+      <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2">
+        <RiCodeAiFill className="text-neutral-400" />
+        Experiência
+      </h2>
       {/* Linha Vertical - Apenas no Desktop */}
       <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-2 h-full bg-gray-700"></div>
 
@@ -68,7 +72,7 @@ const TimelineItem = ({ item, index }) => {
       ></motion.div>
 
       {/* Caixa de Conteúdo */}
-      <div className="w-full sm:w-3/4 lg:w-2/5 p-6 bg-gray-800 rounded-lg shadow-lg mt-8 sm:mt-0 sm:ml-16">
+      <div className="w-full sm:w-3/4 lg:w-2/5 p-6 bg-gray-800 rounded-lg shadow-lg mt-8 sm:mt-0 sm:ml-16 bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 ">
         <h3 className="text-2xl font-bold text-yellow-400">{item.year}</h3>
         <p className="text-white text-lg">{item.title}</p>
         <p

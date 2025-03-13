@@ -5,7 +5,7 @@ import Nav from "../components/navComponent";
 import { SectionAboutMe } from "@/components/sectionAboutMe";
 import { SectionNumbers } from "@/components/sectionNumbers";
 import Timeline from "@/components/sectionExperience";
-import { SectionProjects } from "@/components/sectionProjects";
+import SectionProjects from "@/components/sectionProjects";
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
         <SectionAboutMe></SectionAboutMe>
         <SectionNumbers></SectionNumbers>
         <Timeline></Timeline>
-        <SectionProjects></SectionProjects>
       </ContainerGrid>
+      <SectionProjects></SectionProjects>
     </div>
   );
 }
