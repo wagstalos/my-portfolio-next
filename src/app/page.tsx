@@ -3,6 +3,7 @@ import { SectionFormacao } from "@/components/sectionFormacao";
 import { ContainerGrid } from "../components/container";
 import Nav from "../components/navComponent";
 import { SectionAboutMe } from "@/components/sectionAboutMe";
+import { SectionNumbers } from "@/components/sectionNumbers";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ContainerGrid>
         <SectionFormacao></SectionFormacao>
         <SectionAboutMe></SectionAboutMe>
+        <SectionNumbers></SectionNumbers>
       </ContainerGrid>
     </div>
   );

@@ -78,8 +78,8 @@ export function SectionBanner() {
             height={500}
           />
         </div>
-        <small className="font-bold text-neutral-500 text-base">Skills:</small>
-        <div className="relative w-full overflow-hidden whitespace-nowrap container-marquee">
+        <small className="font-bold text-white text-base">Skills:</small>
+        <div className="relative  max-w-[500px] overflow-hidden whitespace-nowrap container-marquee">
           <div className="marquee flex space-x-8 animate-marquee">
             <p className="font-bold text-4xl text-gray-400">ReactJS</p>
             <p className="font-bold text-4xl text-gray-400">Vue</p>
