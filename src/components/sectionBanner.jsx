@@ -15,7 +15,7 @@ export function SectionBanner() {
 
       <IconsFloating></IconsFloating>
 
-      <div className="container flex flex-col items-center justify-center h-screen mt-32 md:mt-32" >
+      <div className="container flex flex-col items-center justify-center h-screen mt-10 md:mt-32" >
         <p className="text-amber-300 font-bold" data-aos="fade-up" data-aos-duration="500">🚀 SOFTWARE ENGINEER</p>
         <h1 className="flex flex-col md:flex-row items-center justify-center text-5xl md:text-7xl font-bold text-white text-center mt-2" data-aos="fade-up" data-aos-duration="1000">
           <span className="flex items-baseline">Wagner Silva <IoFlash className="text-amber-200 w-10 h-10" data-aos="fade-up" /> </span> Frontend

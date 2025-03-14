@@ -28,9 +28,9 @@ export default function SectionProjects() {
   return (
     <section
       id="meusprojetos"
-      className="py-8 bg-gradient-to-t from-[#0C0D15] via-slate-800 from-[#0C0D15]"
+      className="bg-gradient-to-t from-[#0C0D15] via-slate-800 from-[#0C0D15] mt-0 md:mt-32 mb-32 p-4"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2 mt-32">
+      <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2 mt-0 md:mt-32">
         <FaWebAwesome className="text-neutral-400" />
         Projetos
       </h2>

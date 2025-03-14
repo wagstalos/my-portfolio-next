@@ -8,7 +8,7 @@ export function SectionAboutMe() {
   return (
     <section data-aos="fade-up"
       id="quemsou"
-      className="mt-32 mb-32 rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 "
+      className="mt-32 mb-32 rounded-[0] md:rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 "
     >
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full md:w-1/2 h-auto">

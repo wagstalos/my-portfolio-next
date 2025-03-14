@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
-  // assetPrefix: "/sites/reactjs/portfolio-next",
-  // basePath: "/sites/reactjs/portfolio-next",
+  assetPrefix: "",
+  basePath: "",
   output: "export",
   images: {
     unoptimized: true,
