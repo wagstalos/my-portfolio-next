@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoFooter from "@/assets/logo-wagner.svg";
+import logoFooter from "../assets/logo-wagner.svg";
 import { RiWhatsappLine } from "react-icons/ri";
 import { IconsSociais } from "./iconsSociais";
 

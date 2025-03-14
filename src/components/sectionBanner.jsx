@@ -2,7 +2,7 @@ import Image from "next/image";
 import { RiHtml5Fill, RiJavascriptFill } from "react-icons/ri";
 import { IoLogoCss3 } from "react-icons/io";
 
-import avatar from "@/assets/avatar-wps.png";
+import avatar from "../assets/avatar-wps.png";
 import { IconsFloating } from "./iconsFloating";
 import { IconsSociais } from "./iconsSociais";
 import { MarqueeSkills } from "./marqueeSkills";

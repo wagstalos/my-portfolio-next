@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -21,17 +20,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Wagner Silva - Software Engineer",
   description:
     "Olá, sou Wagner Paulo, Desenvolvedor Fullstack. Sou formado em Design Gráfico pela UNIP, em Desenvolvimento de Jogos Digitais pela ETEC e Pós-Graduado em Desenvolvimento Fullstack de Sistemas Modernos para Nuvem pela UNESC.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
