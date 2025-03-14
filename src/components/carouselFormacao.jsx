@@ -8,7 +8,7 @@ const Carousel = () => {
   return (
     <Swiper
       modules={[Navigation]}
-      spaceBetween={10}
+      spaceBetween={20}
       slidesPerView={3.2}
       loop
       navigation={{
@@ -23,7 +23,7 @@ const Carousel = () => {
       }}
     >
       <SwiperSlide>
-        <CardCarousel ano="2023" title="Pós-Graduação Unesc" descricao="Des. Fullstack de Sistemas Modernos para Nuvem (Cloud Native)" status="Concluido"></CardCarousel>
+        <CardCarousel ano="2023" title="Pós-Graduação Unesc" descricao="Des. Fullstack de Sistemas Modernos para Nuvem." status="Concluido"></CardCarousel>
 
       </SwiperSlide>
 

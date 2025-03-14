@@ -81,7 +81,7 @@ export default function Nav() {
           </li>
           <li className="hover:text-amber-300">
             <a
-              href="/cv.pdf"
+              href="curriculo_wagner.pdf"
               download
               className="bg-amber-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500"
             >

@@ -96,8 +96,8 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 4%;
+  right: -1px;
+  width: 8%;
   height: 100%;
   z-index: 1;
   background: linear-gradient(to left, #0c0d15 40%, #0c0c1400 100%);
