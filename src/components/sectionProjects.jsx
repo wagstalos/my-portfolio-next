@@ -39,12 +39,12 @@ export default function SectionProjects() {
         criatividade e soluções inovadoras em cada um deles.
       </p>
       <div className="flex flex-wrap gap-6 justify-center">
-        {posts.map((project) => (
+        {[...posts].reverse().map((project) => (
           <div
             key={project.id}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
           >
-            <div className="relative rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 ">
+            <div className="relative rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-4 border border-gray-500/20 ">
               <img
                 src={project.img}
                 alt={project.title}
@@ -66,7 +66,7 @@ export default function SectionProjects() {
 
               <a
                 href={project.url}
-                className="font-bold text-amber-300 flex items-center gap-2 hover:text-amber-400"
+                className="font-bold text-amber-300 flex items-center gap-2 hover:text-amber-400" target="_blank"
               >
                 Ver projeto
                 <HiExternalLink className="w-5 h-5" />
