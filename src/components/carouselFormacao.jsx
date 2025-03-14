@@ -1,7 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { IconSchool } from "@tabler/icons-react";
 import "swiper/css";
 import CardCarousel from "./cardCarousel";
 
@@ -9,7 +8,7 @@ const Carousel = () => {
   return (
     <Swiper
       modules={[Navigation]}
-      spaceBetween={50}
+      spaceBetween={10}
       slidesPerView={3.2}
       loop
       navigation={{
