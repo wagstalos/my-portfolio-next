@@ -7,7 +7,7 @@ import {
 
 export function IconsSociais() {
   return (
-    <ul className="flex items-center justify-center mx-auto mt-4 space-x-4">
+    <ul className="flex items-center justify-center mx-auto mt-4 space-x-4" data-aos="fade-up">
       <li>
         <a
           href="https://github.com/wagstalos"

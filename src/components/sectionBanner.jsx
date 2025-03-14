@@ -15,12 +15,12 @@ export function SectionBanner() {
 
       <IconsFloating></IconsFloating>
 
-      <div className="container flex flex-col items-center justify-center h-screen mt-32 md:mt-32">
-        <p className="text-amber-300 font-bold">🚀 SOFTWARE ENGINEER</p>
-        <h1 className="flex flex-col md:flex-row items-center justify-center text-5xl md:text-7xl font-bold text-white text-center mt-2">
-          <span className="flex items-baseline">Wagner Silva <IoFlash className="text-amber-200 w-10 h-10" /> </span> Frontend
+      <div className="container flex flex-col items-center justify-center h-screen mt-32 md:mt-32" >
+        <p className="text-amber-300 font-bold" data-aos="fade-up" data-aos-duration="500">🚀 SOFTWARE ENGINEER</p>
+        <h1 className="flex flex-col md:flex-row items-center justify-center text-5xl md:text-7xl font-bold text-white text-center mt-2" data-aos="fade-up" data-aos-duration="1000">
+          <span className="flex items-baseline">Wagner Silva <IoFlash className="text-amber-200 w-10 h-10" data-aos="fade-up" /> </span> Frontend
         </h1>
-        <p className="text-slate-400 mt-2 md:mt-4 text-center md:text-[20px] leading-[140%] max-w-[800px]">
+        <p className="text-slate-400 mt-2 md:mt-4 text-center md:text-[20px] leading-[140%] max-w-[800px]" data-aos="fade-up" data-aos-duration="1000">
           Olá, sou Wagner Paulo, Desenvolvedor Fullstack. Sou formado em Design
           Gráfico pela UNIP, em Desenvolvimento de Jogos Digitais pela ETEC e
           Pós-Graduado em Desenvolvimento Fullstack de Sistemas Modernos para
@@ -30,9 +30,9 @@ export function SectionBanner() {
         <IconsSociais></IconsSociais>
 
         <div className="relative p-4 avatar-container">
-          <RiHtml5Fill className="w-10 h-10 text-orange-500 absolute top-[18%] left-[8%] animate-pulse  " />
-          <IoLogoCss3 className="w-10 h-10 text-blue-500 absolute top-[37%] left-[87%] animate-pulse" />
-          <RiJavascriptFill className="w-10 h-10 text-yellow-500 absolute top-[85%] left-[0%] animate-pulse" />
+          <RiHtml5Fill className="w-10 h-10 text-orange-500 absolute top-[18%] left-[8%] animate-pulse" data-aos="zoom-in" />
+          <IoLogoCss3 className="w-10 h-10 text-blue-500 absolute top-[37%] left-[87%] animate-pulse" data-aos="zoom-in" />
+          <RiJavascriptFill className="w-10 h-10 text-yellow-500 absolute top-[85%] left-[0%] animate-pulse" data-aos="zoom-in" />
           <Image
             src={avatar}
             className="avatar"
@@ -40,6 +40,7 @@ export function SectionBanner() {
             title="WAgner Silva"
             width={500}
             height={500}
+            data-aos="zoom-in"
           />
         </div>
 

@@ -6,7 +6,7 @@ import { FaSalesforce } from "react-icons/fa";
 
 export function SectionAboutMe() {
   return (
-    <section
+    <section data-aos="fade-up"
       id="quemsou"
       className="mt-32 mb-32 rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 "
     >

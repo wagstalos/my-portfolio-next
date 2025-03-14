@@ -1,3 +1,4 @@
+"use client";
 import { SectionBanner } from "../components/sectionBanner";
 import { SectionFormacao } from "../components/sectionFormacao";
 import { ContainerGrid } from "../components/container";
@@ -7,8 +8,18 @@ import { SectionNumbers } from "../components/sectionNumbers";
 import Timeline from "../components/sectionExperience";
 import SectionProjects from "../components/sectionProjects";
 import { SectionFooter } from "../components/sectionFooter";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importando o estilo do AOS
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, // A animação será executada apenas uma vez
+    });
+  }, []);
+
   return (
     <div>
       <Nav></Nav>

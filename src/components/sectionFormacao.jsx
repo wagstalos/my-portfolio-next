@@ -5,7 +5,7 @@ import { SiHtmlacademy } from "react-icons/si";
 
 export function SectionFormacao() {
   return (
-    <section className="mt-32 mb-32 p-4">
+    <section className="mt-32 mb-32 p-4" data-aos="fade-up">
       <div className="flex justify-between">
         <h2 className="text-4xl font-bold mb-12 flex items-center gap-2">
           <SiHtmlacademy className="text-neutral-400" />

@@ -25,10 +25,10 @@ export default function Nav() {
         {/* Links Centralizados */}
         <ul className="hidden md:flex gap-6 text-lg mx-auto">
           <li className="hover:text-amber-300">
-            <Link href="#quemsou">Quem Sou</Link>
+            <Link href="#quemsou">Quem sou</Link>
           </li>
           <li className="hover:text-amber-300">
-            <Link href="#meusprojetos">Meus Trabalhos</Link>
+            <Link href="#meusprojetos">Meus trabalhos</Link>
           </li>
           <li className="hover:text-amber-300">
             <Link href="#experiencia">Experiência</Link>
@@ -66,12 +66,12 @@ export default function Nav() {
         <ul className="md:hidden flex flex-col items-center gap-4 p-4 bg-[#0C0D15]">
           <li className="hover:text-amber-300">
             <Link href="#quemsou" onClick={() => setIsOpen(false)}>
-              Quem Sou
+              Quem sou
             </Link>
           </li>
           <li className="hover:text-amber-300">
             <Link href="#meusprojetos" onClick={() => setIsOpen(false)}>
-              Meus Trabalhos
+              Meus trabalhos
             </Link>
           </li>
           <li className="hover:text-amber-300">
