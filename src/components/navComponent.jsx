@@ -39,7 +39,7 @@ export default function Nav() {
         <a
           href="curriculo_wagner.pdf"
           download
-          className="hidden md:flex items-center border border-blue-100/20 bg-blue-200/10 text-white px-4 py-2 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400"
+          className="hidden md:flex items-center border border-blue-100/20 bg-blue-200/10 text-white px-4 py-2 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400 transition-all duration-300 ease-in-out "
         >
           <svg
             className="fill-current w-4 h-4 mr-2"
