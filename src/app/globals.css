@@ -30,12 +30,11 @@ body {
 
 .bg-homepage-hero {
   background-image: url(https://betterstack.com/assets/v2/homepage-v3/hero-bg-408d1e858d0c9969863b4116bf2ad625e96cb10643f5868768c35b604208b9ad.jpg);
-  background-image: url(../assets/hero-bg-408.jpg);
+  background-image: url(../assets/hero-bg-408.webp);
   /* background-image: url(../assets/bg-hero.jpg); */
   background-size: auto 100%;
   /* background-size: 100%; */
   width: 100%;
-  /* height: 90vh; */
   background-position: center top -20px;
   background-repeat: no-repeat;
 }
@@ -77,14 +76,6 @@ body {
 }
 
 /* Marquee animation */
-/* .container-marquee::after {
-  position: absolute;
-  top: 0;
-  content: "";
-  height: 50px;
-  width: 50px;
-  background-color: red;
-} */
 .container-marquee::before,
 .container-marquee::after {
   content: "";
@@ -130,4 +121,15 @@ body {
 
   z-index: 1;
   background: linear-gradient(to top, rgba(12, 12, 20, 1) 40%, rgba(12, 12, 20, 0) 100%);
+}
+
+.swiper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to left, #0c0d15 40%, #0c0c1400 100%);
 }

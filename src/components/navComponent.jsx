@@ -37,7 +37,7 @@ export default function Nav() {
 
         {/* Botão Baixar CV */}
         <a
-          href="/cv.pdf"
+          href="curriculo_wagner.pdf"
           download
           className="hidden md:flex items-center border border-blue-100/20 bg-blue-200/10 text-white px-4 py-2 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400"
         >

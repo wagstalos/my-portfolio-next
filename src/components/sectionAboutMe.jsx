@@ -45,7 +45,7 @@ export function SectionAboutMe() {
           </p>
 
           <a
-            href=""
+            href="curriculo_wagner.pdf"
             type="button"
             className="relative inline-flex items-center px-5 py-2.5 text-sm font-medium text-center border border-blue-100/20 bg-blue-200/10 text-white rounded-full focus:ring-4 focus:outline-none focus:ring-blue-300 "
           >
