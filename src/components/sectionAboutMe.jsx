@@ -1,6 +1,6 @@
 import Image from "next/image";
-import imageAbout from "@/assets/Image.png";
-import imageAvatar from "@/assets/avatar-mini.jpg";
+import imageAbout from "../assets/Image.png";
+import imageAvatar from "../assets/avatar-mini.jpg";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaSalesforce } from "react-icons/fa";
 

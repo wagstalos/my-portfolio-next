@@ -1,12 +1,12 @@
-import { SectionBanner } from "@/components/sectionBanner";
-import { SectionFormacao } from "@/components/sectionFormacao";
+import { SectionBanner } from "../components/sectionBanner";
+import { SectionFormacao } from "../components/sectionFormacao";
 import { ContainerGrid } from "../components/container";
 import Nav from "../components/navComponent";
-import { SectionAboutMe } from "@/components/sectionAboutMe";
-import { SectionNumbers } from "@/components/sectionNumbers";
-import Timeline from "@/components/sectionExperience";
-import SectionProjects from "@/components/sectionProjects";
-import { SectionFooter } from "@/components/sectionFooter";
+import { SectionAboutMe } from "../components/sectionAboutMe";
+import { SectionNumbers } from "../components/sectionNumbers";
+import Timeline from "../components/sectionExperience";
+import SectionProjects from "../components/sectionProjects";
+import { SectionFooter } from "../components/sectionFooter";
 
 export default function Home() {
   return (

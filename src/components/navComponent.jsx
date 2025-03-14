@@ -5,7 +5,7 @@ import { HiMenu, HiX } from "react-icons/hi"; // Substituindo Menu e X
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from "@/assets/logo-wagner.svg";
+import logo from "../assets/logo-wagner.svg";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
