@@ -29,7 +29,7 @@ body {
 }
 
 .bg-homepage-hero {
-  background-image: url(../assets/grid.png);
+  background-image: url(../assets/hero-bg-408.webp);
   background-size: auto 100%;
   width: 100%;
   background-position: center top -20px;
@@ -87,7 +87,6 @@ body {
   width: 80%;
   height: 100px;
   /* Altura do degradê */
-
   z-index: 1;
   background: linear-gradient(to top, rgba(12, 12, 20, 1) 40%, rgba(12, 12, 20, 0) 100%);
 }

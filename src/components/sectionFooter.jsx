@@ -2,11 +2,14 @@ import Image from "next/image";
 import logoFooter from "../assets/logo-wagner.svg";
 import { RiWhatsappLine } from "react-icons/ri";
 import { IconsSociais } from "./iconsSociais";
+import ScrollToTop from "./btnScrollToTop";
 
 export function SectionFooter() {
   return (
-    <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4 pb-8">
+    <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4 pb-8 relative">
       <div className="flex items-center justify-center"></div>
+
+      <ScrollToTop></ScrollToTop>
 
       <a
         href="https://wa.me/5511999488027"
