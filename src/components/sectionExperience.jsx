@@ -37,7 +37,7 @@ const Timeline = () => {
       id="experiencia"
       className="relative max-w-6xl mx-auto p-8 mt-32 mb-32"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2">
+      <h2 className="text-white text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2">
         <RiCodeAiFill className="text-neutral-400" />
         Experiência
       </h2>
@@ -61,9 +61,8 @@ const TimelineItem = ({ item, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: index * 0.3 }}
       viewport={{ once: true }}
-      className={`relative flex flex-col sm:flex-row items-center w-full my-10 ${
-        index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-      }`}
+      className={`relative flex flex-col sm:flex-row items-center w-full my-10 ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+        }`}
     >
       {/* Ponto da Timeline */}
       <motion.div
@@ -79,9 +78,8 @@ const TimelineItem = ({ item, index }) => {
         <h3 className="text-2xl font-bold text-yellow-400">{item.year}</h3>
         <p className="text-white text-lg">{item.title}</p>
         <p
-          className={`text-gray-400 transition-all ${
-            expanded ? "line-clamp-none" : "line-clamp-2"
-          }`}
+          className={`text-gray-400 transition-all ${expanded ? "line-clamp-none" : "line-clamp-2"
+            }`}
         >
           {item.description}
         </p>

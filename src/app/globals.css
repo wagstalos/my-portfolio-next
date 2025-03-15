@@ -16,15 +16,15 @@
 
 } */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0C0D15;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
+  background: #0C0D15;
   color: var(--foreground);
 }
 

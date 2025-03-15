@@ -6,7 +6,7 @@ import ScrollToTop from "./btnScrollToTop";
 
 export function SectionFooter() {
   return (
-    <footer className="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4 pb-8 relative">
+    <footer className=" rounded-lg shadow-sm bg-gray-900 m-4 pb-8 relative">
       <div className="flex items-center justify-center"></div>
 
       <ScrollToTop></ScrollToTop>
@@ -28,7 +28,7 @@ export function SectionFooter() {
           >
             <Image src={logoFooter} alt="logoFooter" width={200} />
           </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
             <li>
               <a href="#quemsou" className="hover:underline me-4 md:me-6">
                 Quem sou
@@ -51,8 +51,8 @@ export function SectionFooter() {
             </li>
           </ul>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+        <span className="block text-sm sm:text-center text-gray-400">
           © 2025{" "}
           <a href="https://flowbite.com/" className="hover:underline">
             Wagner Silva™

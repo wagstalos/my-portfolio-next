@@ -13,7 +13,7 @@ export function SectionAboutMe() {
     >
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full md:w-1/2 h-auto">
-          <p className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-amber-100/20 dark:text-amber-400 mb-2">
+          <p className="text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md bg-amber-100/20 text-amber-400 mb-2">
             <svg
               className="w-2.5 h-2.5 me-1.5"
               aria-hidden="true"
@@ -34,7 +34,7 @@ export function SectionAboutMe() {
 
           <h2 className="text-4xl font-bold mt-5 ">Prazer sou Wagner Silva</h2>
 
-          <p className="mt-8 text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+          <p className="mt-8 text-lg font-normal text-gray-400 mb-4">
             Apaixonado por tecnologia, atuo na produção de sites,{" "}
             <b>E-commerce com Salesforce Commerce Cloud (SFCC)</b> ,
             desenvolvendo para clientes como Tramontina, Fini, São Vicente,
@@ -59,9 +59,7 @@ export function SectionAboutMe() {
             </svg>
             <span className="sr-only">Notifications</span>
             Baixar CV
-            {/* <div className="absolute  inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
-              1
-            </div> */}
+
             <span className="absolute flex items-center justify-center w-6 h-6 -top-2 -right-2">
               <span className="animate-ping absolute top-0 right-0 inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full border-gray-900"></span>
               <span className="relative flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full border-gray-900">1</span>
@@ -116,23 +114,23 @@ export function SectionAboutMe() {
 
           <p className="font-bold mt-4">Especialidades:</p>
           <div className="flex flex-wrap border-t border-gray-500/50 py-4">
-            <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
+            <span className="flex items-center text-sm font-medium text-white me-3">
               <span className="flex w-2.5 h-2.5 bg-blue-600 rounded-full me-1.5 shrink-0"></span>
               E-commerce
             </span>
-            <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
+            <span className="flex items-center text-sm font-medium text-white me-3">
               <span className="flex w-2.5 h-2.5 bg-purple-500 rounded-full me-1.5 shrink-0"></span>
               Landing Pages
             </span>
-            <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
+            <span className="flex items-center text-sm font-medium  text-white me-3">
               <span className="flex w-2.5 h-2.5 bg-indigo-500 rounded-full me-1.5 shrink-0"></span>
               Websites
             </span>
-            <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
+            <span className="flex items-center text-sm font-medium text-white me-3">
               <span className="flex w-2.5 h-2.5 bg-teal-500 rounded-full me-1.5 shrink-0"></span>
               Jogos digitais
             </span>
-            <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white me-3">
+            <span className="flex items-center text-sm font-medium text-white me-3">
               <span className="flex w-2.5 h-2.5 bg-amber-500 rounded-full me-1.5 shrink-0"></span>
               Salesforce
             </span>

@@ -28,13 +28,13 @@ export default function SectionProjects() {
   return (
     <section
       id="meusprojetos"
-      className="bg-gradient-to-t from-[#0C0D15] via-slate-800 from-[#0C0D15] mt-0 md:mt-32 mb-32 p-4"
+      className="bg-gradient-to-t from-[#0C0D15] via-slate-800 mt-0 md:mt-32 mb-32 p-4"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2 mt-0 md:mt-32">
+      <h2 className="text-white text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2 mt-0 md:mt-32">
         <FaWebAwesome className="text-neutral-400" />
         Projetos
       </h2>
-      <p className="mt-8 text-lg font-normal text-gray-500 dark:text-gray-400 mb-4 text-center max-w-[700] mx-auto">
+      <p className="mt-8 text-lg font-normal text-gray-400 mb-4 text-center max-w-[700] mx-auto">
         Confira alguns dos meus projetos mais recentes e veja como aplico
         criatividade e soluções inovadoras em cada um deles.
       </p>
@@ -53,15 +53,15 @@ export default function SectionProjects() {
               />
 
               <div className="flex">
-                <span className="mt-2 bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-indigo-900 dark:text-indigo-300">
+                <span className="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm bg-indigo-900 text-indigo-300">
                   {project.tag}
                 </span>
-                <span className="mt-2 bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">
+                <span className="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm bg-blue-900 text-blue-300">
                   {project.categoria}
                 </span>
               </div>
 
-              <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
+              <h3 className="text-white text-xl font-semibold mt-4">{project.title}</h3>
               <p className="text-gray-500 mb-8">{project.body}</p>
 
               <a
