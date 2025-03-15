@@ -1,6 +1,7 @@
 import Image from "next/image";
 import imageAbout from "../assets/Image.png";
 import imageAvatar from "../assets/avatar-mini.jpg";
+import imageRanger from "../assets/ranger.png";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaSalesforce } from "react-icons/fa";
 
@@ -8,7 +9,7 @@ export function SectionAboutMe() {
   return (
     <section data-aos="fade-up"
       id="quemsou"
-      className="mt-32 mb-32 rounded-[0] md:rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 "
+      className="bg-homepage-about mt-32 mb-32 rounded-[0] md:rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-6 border border-gray-500/20 "
     >
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full md:w-1/2 h-auto">
@@ -58,9 +59,13 @@ export function SectionAboutMe() {
             </svg>
             <span className="sr-only">Notifications</span>
             Baixar CV
-            <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+            {/* <div className="absolute  inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
               1
-            </div>
+            </div> */}
+            <span className="absolute flex items-center justify-center w-6 h-6 -top-2 -right-2">
+              <span className="animate-ping absolute top-0 right-0 inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full border-gray-900"></span>
+              <span className="relative flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full border-gray-900">1</span>
+            </span>
           </a>
 
           <div className="mt-24 ">
@@ -74,24 +79,39 @@ export function SectionAboutMe() {
                 <p className="font-bold">Wagner Silva</p>
                 <p className="text-gray-400">Software Engineer</p>
               </span>
+              <a href="https://www.salesforce.com/trailblazer/wdasilva13" target="_blank">
+                <Image
+                  className="ml-4"
+                  src={imageRanger}
+                  alt="Rounded avatar"
+                  width={60}
+                />
+              </a>
+
+              <div>
+
+              </div>
             </div>
 
             <div className="flex">
               <a
-                href=""
-                className="flex mt-4 mr-4 text-gray-300 hover:text-amber-200"
+                href="https://www.instagram.com/wagner.paulo89/" target="_blank"
+                className="flex mt-4 mr-4 text-gray-300 hover:text-amber-300"
               >
                 <RiInstagramLine className="w-6 h-6 mr-2" />
                 <p>wagner.paulo89</p>
               </a>
               <a
                 href="https://www.salesforce.com/trailblazer/wdasilva13"
-                className="flex mt-4 text-gray-300 hover:text-amber-200"
+                className="flex mt-4 text-gray-300 hover:text-amber-300"
               >
                 <FaSalesforce className="w-6 h-6 mr-2 " />
                 <p>wdasilva13</p>
               </a>
             </div>
+
+
+
           </div>
 
           <p className="font-bold mt-4">Especialidades:</p>

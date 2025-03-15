@@ -10,13 +10,13 @@ import SectionProjects from "../components/sectionProjects";
 import { SectionFooter } from "../components/sectionFooter";
 import { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Importando o estilo do AOS
+import 'aos/dist/aos.css';
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, // A animação será executada apenas uma vez
+      once: true,
     });
   }, []);
 

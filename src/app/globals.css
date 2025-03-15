@@ -36,6 +36,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.bg-homepage-about {
+  background-image: url(../assets/grid.png);
+  background-repeat: no-repeat;
+}
+
 .gradient_text {
   background-clip: text;
   -webkit-background-clip: text;

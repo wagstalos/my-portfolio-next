@@ -2,8 +2,8 @@ import { IconSchool } from "@tabler/icons-react";
 
 const CardCarousel = ({ ano, title, descricao, status }) => {
     return (
-        <div className="relative max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900/20 dark:border-gray-700 
-  transition-all duration-300 ease-in-out hover:border-amber-300 hover:shadow-lg">
+        <div className="relative max-w-sm p-6 border rounded-lg shadow-sm bg-gray-900/20 border-gray-700
+  transition-all duration-300 ease-in-out hover:border-gray-500 hover:shadow-lg">
             <div className="flex items-center justify-between w-full text-white border-b border-slate-500/30 pb-4">
                 <IconSchool
                     size={44}
