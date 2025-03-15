@@ -28,7 +28,7 @@ const Carousel = () => {
       </SwiperSlide>
 
       <SwiperSlide>
-        <CardCarousel ano="2022 - 2023" title="Front-end Avançado" descricao="Curso completo de frontend do básico ao avançado, API, NextJS e WP." status="Concluido"></CardCarousel>
+        <CardCarousel ano="2022 - 2023" title="Codeboost" descricao="Frontend do básico ao avançado,consumindo API, NextJS e WP." status="Concluido"></CardCarousel>
       </SwiperSlide>
 
       <SwiperSlide>
