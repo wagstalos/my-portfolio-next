@@ -80,8 +80,11 @@ export default function Nav() {
               Experiência
             </a>
           </li>
-          <li className="hover:text-amber-300">
-            <a href="curriculo_wagner.pdf" download className="bg-amber-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500">
+          <li className="hover:text-amber-300 mt-4">
+            <a href="curriculo_wagner.pdf" download className="flex items-center border border-blue-100/20 bg-blue-200/10 text-white px-8 py-2 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400 transition-all duration-300 ease-in-out">
+              <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
               Baixar CV
             </a>
           </li>
