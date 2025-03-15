@@ -10,12 +10,12 @@ const CardCarousel = ({ ano, title, descricao, status }) => {
                     stroke={2}
                     className="text-gray-400 border border-blue-100/20 bg-blue-200/10 p-2 rounded-lg hover:border-slate-500"
                 />
-                <h2 className="text-lg font-semibold">{ano}</h2>
+                <h5 className="text-lg font-semibold">{ano}</h5>
             </div>
 
-            <h5 className="mb-2 mt-4 text-2xl font-semibold tracking-tight text-white">
+            <h6 className="mb-2 mt-4 text-2xl font-semibold tracking-tight text-white">
                 {title}
-            </h5>
+            </h6>
             <p className="mb-9 font-normal text-gray-400">
                 {descricao}
             </p>

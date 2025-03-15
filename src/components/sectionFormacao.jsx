@@ -12,10 +12,10 @@ export function SectionFormacao() {
           Formação
         </h2>
         <div>
-          <button className="custom-prev cursor-pointer mr-4 border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-full hover:border-amber-300">
+          <button className="custom-prev cursor-pointer mr-4 border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-full hover:border-amber-300" aria-label="Prev">
             <IconChevronLeft className="text-white" size={22} stroke={2} />
           </button>
-          <button className="custom-next cursor-pointer border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-full hover:border-amber-300">
+          <button className="custom-next cursor-pointer border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-full hover:border-amber-300" aria-label="Next">
             <IconChevronRight className="text-white" size={22} stroke={2} />
           </button>
         </div>

@@ -5,11 +5,11 @@ import { FaSalesforce } from "react-icons/fa";
 export function IconsFloating() {
   return (
     <div className="icons-skills">
-      <span className="animate-pulse absolute top-[8%] left-[8%] border border-blue-100/20 bg-blue-200/10 p-2 w-15 h-15 rounded-full hover:border-gray-300/50 items-center justify-center hidden sm:flex hover:transform hover:translate-x-2 hover:translate-y-2 transition-all duration-300 ease-in-out">
+      <span className="animate-pulse absolute top-[12%] left-[8%] border border-blue-100/20 bg-blue-200/10 p-2 w-15 h-15 rounded-full hover:border-gray-300/50 items-center justify-center hidden sm:flex hover:transform hover:translate-x-2 hover:translate-y-2 transition-all duration-300 ease-in-out">
         <RiVuejsFill className="w-6 h-6 text-emerald-400" />
       </span>
 
-      <span className="animate-pulse absolute top-[8%] right-[8%] border border-blue-100/20 bg-blue-200/10 p-2 w-15 h-15 rounded-full hover:border-gray-300/50 items-center justify-center hidden sm:flex hover:transform hover:translate-x-2 hover:translate-y-2 transition-all duration-300 ease-in-out">
+      <span className="animate-pulse absolute top-[15%] right-[8%] border border-blue-100/20 bg-blue-200/10 p-2 w-15 h-15 rounded-full hover:border-gray-300/50 items-center justify-center hidden sm:flex hover:transform hover:translate-x-2 hover:translate-y-2 transition-all duration-300 ease-in-out">
         <RiReactjsLine className="w-6 h-6 text-cyan-400" />
       </span>
 

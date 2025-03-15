@@ -19,7 +19,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="text-white p-4 border-b border-slate-500/30">
+    <nav className="text-white p-4 border-b border-slate-500/30 fixed top-0 left-0 w-full z-50 bg-[#0f1018]">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
           <Image src={logo} alt="Wagner Silva" title="Wagner Silva" width={200} />
