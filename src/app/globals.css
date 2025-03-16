@@ -70,17 +70,27 @@ body {
   background: linear-gradient(to left, rgba(12, 13, 21, 1), rgba(12, 13, 21, 0));
 }
 
-.marquee {
-  animation: marquee 25s linear infinite;
+.container-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  min-width: 200%;
+  /* O dobro do tamanho do container */
+  animation: marquee-scroll 20s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
 }
 
