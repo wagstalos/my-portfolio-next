@@ -96,7 +96,7 @@ export default function SectionProjects() {
                 <p className="text-gray-500 mb-8">{project.body}</p>
                 <a
                   href={project.url}
-                  className="font-bold text-amber-300 flex items-center gap-2 hover:text-amber-400"
+                  className="flex items-center justify-center w-50 border border-blue-100/20 bg-blue-200/10 text-white px-4 py-2 rounded-full font-semibold hover:border-amber-400 hover:text-amber-400 transition-all duration-300 ease-in-out"
                   target="_blank"
                 >
                   Ver projeto
