@@ -121,11 +121,15 @@ body {
 /* swiper */
 #meusprojetos .swiper-button-prev,
 #meusprojetos .swiper-button-next {
-  background-color: color-mix(in oklab, var(--color-blue-200) 10%, transparent);
+  background-color: color-mix(in oklab, #1E222C 40%, transparent);
   width: calc(var(--swiper-navigation-size) / 27 * 27);
   border-radius: 50%;
   border: 1px solid white;
   color: #fff;
+}
+
+#meusprojetos .swiper-wrapper {
+  padding-bottom: 40px;
 }
 
 #meusprojetos .swiper-button-prev:hover,
@@ -137,4 +141,12 @@ body {
 #meusprojetos .swiper-button-prev:after,
 #meusprojetos .swiper-button-next:after {
   font-size: 14px;
+}
+
+.swiper-pagination-fraction {
+  color: white !important;
+}
+
+#meusprojetos .swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
 }

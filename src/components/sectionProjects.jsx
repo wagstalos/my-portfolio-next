@@ -39,7 +39,7 @@ export default function SectionProjects() {
         <FaWebAwesome className="text-neutral-400" />
         Projetos
       </h2>
-      <p className="mt-8 text-lg font-normal text-gray-400 mb-4 text-center max-w-[700px] mx-auto">
+      <p className="mt-8 mb-24 text-lg font-normal text-gray-400 text-center max-w-[700px] mx-auto">
         Confira alguns dos meus projetos mais recentes e veja como aplico
         criatividade e soluções inovadoras em cada um deles.
       </p>
@@ -50,14 +50,19 @@ export default function SectionProjects() {
         spaceBetween={20}
         slidesPerView={4.5}
         breakpoints={{
-          0: { slidesPerView: 1.2 },
-          640: { slidesPerView: 1.2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 3.5 },
-          1280: { slidesPerView: 4.5 },
+          0: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+            pagination: { type: 'fraction' }
+
+          },
+          640: { slidesPerView: 1.5, spaceBetween: 15 },
+          768: { slidesPerView: 3, spaceBetween: 20 },
+          1024: { slidesPerView: 3.5, spaceBetween: 20 },
+          1280: { slidesPerView: 4.5, spaceBetween: 20 },
         }}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true, type: 'bullets' }}
         // autoplay={{ delay: 4000, disableOnInteraction: false }}
         className="mt-8"
       >
