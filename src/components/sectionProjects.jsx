@@ -2,6 +2,11 @@
 import { HiExternalLink } from "react-icons/hi";
 import { FaWebAwesome } from "react-icons/fa6";
 import { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function SectionProjects() {
   const [posts, setPosts] = useState([]);
@@ -28,53 +33,75 @@ export default function SectionProjects() {
   return (
     <section
       id="meusprojetos"
-      className="bg-gradient-to-t from-[#0C0D15] via-slate-800 mt-0 md:mt-32 mb-32 p-4"
+      className=" mt-0 md:mt-32 mb-32 p-4"
     >
-      <h2 className="text-white text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2 mt-0 md:mt-32">
+      <h2 className="text-white text-4xl font-bold mb-12 text-center flex items-center justify-center gap-2">
         <FaWebAwesome className="text-neutral-400" />
         Projetos
       </h2>
-      <p className="mt-8 text-lg font-normal text-gray-400 mb-4 text-center max-w-[700] mx-auto">
+      <p className="mt-8 text-lg font-normal text-gray-400 mb-4 text-center max-w-[700px] mx-auto">
         Confira alguns dos meus projetos mais recentes e veja como aplico
         criatividade e soluções inovadoras em cada um deles.
       </p>
-      <div className="flex flex-wrap gap-6 justify-center">
-        {[...posts].reverse().map((project) => (
-          <div
-            key={project.id}
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
-          >
-            <div className="relative rounded-[20px] bg-gradient-to-b from-[#1e202f] to-[#12131c] p-4 border border-gray-500/20 ">
-              <img
-                src={project.img}
-                alt={project.title}
-                title={project.title}
-                className="w-full h-[143px] object-cover rounded-[10px]"
-              />
 
-              <div className="flex">
-                <span className="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm bg-indigo-900 text-indigo-300">
-                  {project.tag}
-                </span>
-                <span className="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm bg-blue-900 text-blue-300">
-                  {project.categoria}
-                </span>
+      {/* Swiper Slider */}
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={20}
+        slidesPerView={4.5}
+        breakpoints={{
+          0: { slidesPerView: 1.2 },
+          640: { slidesPerView: 1.2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 3.5 },
+          1280: { slidesPerView: 4.5 },
+        }}
+        navigation
+        pagination={{ clickable: true }}
+        // autoplay={{ delay: 4000, disableOnInteraction: false }}
+        className="mt-8"
+      >
+        {[...posts].reverse().map((project) => (
+
+          <SwiperSlide key={project.id}>
+
+            <div className="relative rounded-[5px] bg-gradient-to-b from-[#1e202f] to-[#12131c] border border-gray-500/20">
+
+              <div>
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  title={project.title}
+                  className="w-full h-[525px] object-cover object-top rounded-[5px]" />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
               </div>
 
-              <h3 className="text-white text-xl font-semibold mt-4">{project.title}</h3>
-              <p className="text-gray-500 mb-8">{project.body}</p>
+              <div className="absolute bottom-[20px] left-[20px]">
 
-              <a
-                href={project.url}
-                className="font-bold text-amber-300 flex items-center gap-2 hover:text-amber-400" target="_blank"
-              >
-                Ver projeto
-                <HiExternalLink className="w-5 h-5" />
-              </a>
+                <div className="flex">
+                  <span className="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm bg-indigo-900 text-indigo-300">
+                    {project.tag}
+                  </span>
+                  <span className="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm bg-blue-900 text-blue-300">
+                    {project.categoria}
+                  </span>
+                </div>
+                <h3 className="text-white text-xl font-semibold mt-4">{project.title}</h3>
+                <p className="text-gray-500 mb-8">{project.body}</p>
+                <a
+                  href={project.url}
+                  className="font-bold text-amber-300 flex items-center gap-2 hover:text-amber-400"
+                  target="_blank"
+                >
+                  Ver projeto
+                  <HiExternalLink className="w-5 h-5" />
+                </a>
+              </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 }
