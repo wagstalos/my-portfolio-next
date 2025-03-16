@@ -150,3 +150,12 @@ body {
 #meusprojetos .swiper-pagination-bullet {
   background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
 }
+
+.custom-deg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: linear-gradient(to top, #000000, #0000);
+  border-radius: 5px;
+  bottom: 0
+}

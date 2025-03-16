@@ -72,14 +72,14 @@ export default function SectionProjects() {
 
             <div className="relative rounded-[5px] bg-gradient-to-b from-[#1e202f] to-[#12131c] border border-gray-500/20">
 
-              <div>
+              <div className="relative">
                 <img
                   src={project.img}
                   alt={project.title}
                   title={project.title}
                   className="w-full h-[525px] object-cover object-top rounded-[5px]" />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div className="custom-deg"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent "></div>
               </div>
 
               <div className="absolute bottom-[20px] left-[20px]">
