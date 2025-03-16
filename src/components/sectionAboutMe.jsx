@@ -1,5 +1,5 @@
 import Image from "next/image";
-import imageAbout from "../assets/Image.png";
+import imageAbout from "../assets/wagner.webp";
 import imageAvatar from "../assets/avatar-mini.jpg";
 import imageRanger from "../assets/ranger.png";
 import { RiInstagramLine } from "react-icons/ri";
