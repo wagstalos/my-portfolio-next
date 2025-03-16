@@ -124,7 +124,7 @@ body {
   background-color: color-mix(in oklab, #1E222C 40%, transparent);
   width: calc(var(--swiper-navigation-size) / 27 * 27);
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, .2);
   color: #fff;
 }
 
