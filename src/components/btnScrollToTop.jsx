@@ -20,7 +20,7 @@ export default function ScrollToTop() {
 
     return (
         <button aria-label="Btn Topo"
-            className={`cursor-pointer fixed bottom-25 right-7 flex items-center justify-center size-12 rounded-full p-2 ring-1 bg-white/5 ring-white/20 hover:ring-amber-300 transition-opacity duration-300 ${showButton ? "opacity-100" : "opacity-0"
+            className={`cursor-pointer z-50 fixed bottom-25 right-7 flex items-center justify-center size-12 rounded-full p-2 ring-1 bg-white/5 ring-white/20 hover:ring-amber-300 transition-opacity duration-300 ${showButton ? "opacity-100" : "opacity-0"
                 }`}
             onClick={scrollToTop}
         >
