@@ -13,6 +13,7 @@ export function IconsSociais() {
           href="https://github.com/wagstalos"
           className="flex items-center justify-center"
           aria-label="Github"
+          target="_blank"
           rel="noopener noreferrer"
         >
           <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center transition-all duration-300 ease-in-out ">
@@ -27,6 +28,8 @@ export function IconsSociais() {
           className="flex items-center justify-center"
           aria-label="Linkedin"
           rel="noopener noreferrer"
+          target="_blank"
+
         >
           <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center transition-all duration-300 ease-in-out ">
             <RiLinkedinFill className="w-6 h-6 text-white" />
@@ -40,6 +43,7 @@ export function IconsSociais() {
           className="flex items-center justify-center"
           aria-label="Behance"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center transition-all duration-300 ease-in-out ">
             <RiBehanceLine className="w-6 h-6 text-white" />
@@ -53,6 +57,7 @@ export function IconsSociais() {
           className="flex items-center justify-center"
           aria-label="Dribbble"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <span className="border border-blue-100/20 bg-blue-200/10 p-2 w-10 h-10 rounded-lg hover:border-amber-300 flex items-center justify-center transition-all duration-300 ease-in-out ">
             <RiDribbbleLine className="w-6 h-6 text-white" />

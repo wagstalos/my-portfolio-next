@@ -37,7 +37,7 @@ export function SectionFooter() {
             </li>
             <li>
               <a href="#meusprojetos" className="hover:underline me-4 md:me-6">
-                Meus trabalhos
+                Projetos
               </a>
             </li>
             <li>

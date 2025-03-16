@@ -34,7 +34,7 @@ export default function Nav() {
           </li>
           <li className="hover:text-amber-300">
             <a href="#meusprojetos" onClick={(e) => scrollToSection(e, "#meusprojetos")}>
-              Meus trabalhos
+              Projetos
             </a>
           </li>
           <li className="hover:text-amber-300">
@@ -72,7 +72,7 @@ export default function Nav() {
           </li>
           <li className="hover:text-amber-300">
             <a href="#meusprojetos" onClick={(e) => scrollToSection(e, "#meusprojetos")}>
-              Meus trabalhos
+              Projetos
             </a>
           </li>
           <li className="hover:text-amber-300">
