@@ -33,13 +33,13 @@ export default function SectionProjects() {
   return (
     <section
       id="meusprojetos"
-      className=" mt-0 md:mt-32 mb-32 p-4 md:p-4 mt-0 md:mt-32 mb-32 pt-4 pl-4 pb-4 pr-0"
+      className="p-4 md:p-4 mt-0 md:mt-32 mb-5 pt-4 pl-4 pb-4 pr-0"
     >
       <h2 className="text-white text-4xl font-bold mb-12 text-center flex items-center justify-center gap-2">
         <FaWebAwesome className="text-neutral-400" />
         Projetos
       </h2>
-      <p className="mt-8 mb-24 text-lg font-normal text-gray-400 text-center max-w-[700px] mx-auto">
+      <p className="mt-8 mb-2 md:mb-24 text-lg font-normal text-gray-400 text-center max-w-[700px] mx-auto">
         Confira alguns dos meus projetos mais recentes e veja como aplico
         criatividade e soluções inovadoras em cada um deles.
       </p>
