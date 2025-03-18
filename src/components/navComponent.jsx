@@ -27,17 +27,17 @@ export default function Nav() {
 
         {/* Links Centralizados */}
         <ul className="hidden md:flex gap-6 text-lg mx-auto">
-          <li className="hover:text-amber-300">
+          <li className="hover:text-amber-300 px-4">
             <a href="#quemsou" onClick={(e) => scrollToSection(e, "#quemsou")}>
               Quem sou
             </a>
           </li>
-          <li className="hover:text-amber-300">
+          <li className="hover:text-amber-300 px-4">
             <a href="#meusprojetos" onClick={(e) => scrollToSection(e, "#meusprojetos")}>
               Projetos
             </a>
           </li>
-          <li className="hover:text-amber-300">
+          <li className="hover:text-amber-300 px-4">
             <a href="#experiencia" onClick={(e) => scrollToSection(e, "#experiencia")}>
               Experiência
             </a>

@@ -41,14 +41,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.gradient_text {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: radial-gradient(50% 108% at 50% 0, #ecfbff 5%, #a8b8e6 35%, #b0b0d2 62%, transparent 100%);
-  background-color: #676784;
-}
-
 /* Marquee animation */
 .container-marquee::before,
 .container-marquee::after {
@@ -130,6 +122,7 @@ body {
 
 #meusprojetos .swiper-wrapper {
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 #meusprojetos .swiper-button-prev:hover,
@@ -158,4 +151,22 @@ body {
   background: linear-gradient(to top, #000000, #0000);
   border-radius: 5px;
   bottom: 0
+}
+
+.gradient_text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: radial-gradient(150% 90% at 50% 0, #ecfbff 5%, #a8b8e6 35%, #b0b0d2 62%, transparent 100%);
+  background-color: #424252;
+}
+
+
+.wps {
+  transition: transform 0.2s ease-in-out;
+}
+
+.wps:hover {
+  transform: translateY(-10px);
+  /* Move o card para cima */
 }

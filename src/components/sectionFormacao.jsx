@@ -7,8 +7,8 @@ export function SectionFormacao() {
   return (
     <section className="mt-32 mb-32 p-4" data-aos="fade-up">
       <div className="flex justify-between">
-        <h2 className="text-4xl font-bold mb-12 flex items-center gap-2 text-white">
-          <SiHtmlacademy className="text-neutral-400" />
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 flex items-center gap-2 text-white gradient_text">
+          <SiHtmlacademy className="text-white" />
           Formação
         </h2>
         <div>

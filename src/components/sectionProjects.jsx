@@ -35,14 +35,18 @@ export default function SectionProjects() {
       id="meusprojetos"
       className="p-4 md:p-4 mt-0 md:mt-32 mb-5 md:mb-32 pt-4 pl-4 pb-4 pr-0"
     >
-      <h2 className="text-white text-4xl font-bold mb-12 text-center flex items-center justify-center gap-2">
-        <FaWebAwesome className="text-neutral-400" />
-        Projetos
-      </h2>
-      <p className="mt-8 mb-2 md:mb-24 text-lg font-normal text-gray-400 text-center max-w-[700px] mx-auto">
-        Confira alguns dos meus projetos mais recentes e veja como aplico
-        criatividade e soluções inovadoras em cada um deles.
-      </p>
+
+      <div className="max-w-[86rem] mx-auto">
+        <h2 className="text-white text-4xl md:text-5xl font-bold mb-2 gap-2 flex gradient_text">
+          <FaWebAwesome className="text-white-400" />
+          Projetos
+        </h2>
+        <p className="mt-8 mb-2 md:mb-24 text-lg font-normal text-gray-400 max-w-[700px]">
+          Confira alguns dos meus projetos mais recentes e veja como aplico
+          criatividade e soluções inovadoras em cada um deles.
+        </p>
+      </div>
+
 
       {/* Swiper Slider */}
       <Swiper
@@ -68,7 +72,7 @@ export default function SectionProjects() {
       >
         {[...posts].reverse().map((project) => (
 
-          <SwiperSlide key={project.id}>
+          <SwiperSlide key={project.id} className="wps">
 
             <div className="relative rounded-[5px] bg-gradient-to-b from-[#1e202f] to-[#12131c] border border-gray-500/20">
 

@@ -37,8 +37,8 @@ const Timeline = () => {
       id="experiencia"
       className="relative max-w-6xl mx-auto p-8 mt-32 mb-32"
     >
-      <h2 className="text-white text-4xl font-bold mb-12 text-center flex  items-center justify-center gap-2">
-        <RiCodeAiFill className="text-neutral-400" />
+      <h2 className="text-white text-4xl md:text-5xl font-bold mb-12 text-center flex  items-center justify-center gap-2 gradient_text">
+        <RiCodeAiFill className="text-white-400" />
         Experiência
       </h2>
       {/* Linha Vertical - Apenas no Desktop */}
