@@ -33,7 +33,7 @@ export default function SectionProjects() {
   return (
     <section
       id="meusprojetos"
-      className="p-4 md:p-4 mt-0 md:mt-32 mb-5 md:mb-32 pt-4 pl-4 pb-4 pr-0"
+      className="p-4 md:p-4 mt-0 md:mt-32 mb-32 pt-4 pl-4 pb-4 pr-0"
     >
 
       <div className="max-w-[86rem] mx-auto">
