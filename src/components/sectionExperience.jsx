@@ -7,6 +7,12 @@ import { RiCodeAiFill } from "react-icons/ri";
 const Timeline = () => {
   const items = [
     {
+      year: "2025",
+      title: "Corebiz - Frontend Sr",
+      description:
+        "Desenvolvimento de lojas digitais utilizando Salesforce Commerce Cloud (SFCC), com expertise em ISML. Desenvolvimento de componentes no Page Designer, incluindo páginas de detalhes de produtos (Product Detail Page), listagem de produtos (Page List Product), ativos de conteúdo (content assets), aplicação de SASS, implementação de scripts em JavaScript e jQuery. Contribuí ativamente no tagueamento para e-commerce (GA4) atuando em time internacional, seguindo sempre as metodologias ágeis Kanban e Scrum.",
+    },
+    {
       year: "2024",
       title: "Backlgrs - Frontend Sr",
       description:
